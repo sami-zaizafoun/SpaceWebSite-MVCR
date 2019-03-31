@@ -1,0 +1,20 @@
+.content{
+  display: flex;
+  padding: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.about, .extra{
+  margin-right: 2em;
+  width:30%;
+  border: 2px solid #191970;
+  border-radius: 15px;
+  box-shadow: 5px 5px #000000;
+}
+
+.about h2, .extra h2{
+  border-bottom: 3px solid #191970;
+  padding-bottom: 1em;
+}

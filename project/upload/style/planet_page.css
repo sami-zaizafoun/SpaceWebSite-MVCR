@@ -1,0 +1,82 @@
+.main{
+  padding: 1em;
+}
+
+.info{
+  display : grid;
+  grid-template-areas:
+    "b b"
+    "a ."
+    "c ."
+    "d .";
+  grid-template-rows: 375px;
+  width: 75%;
+}
+
+.name {
+  font-size: 50px;
+  grid-area: a;
+}
+
+.image {
+  grid-area: b;
+  align-self: center;
+  width : 400px;
+  border-radius: 15%;
+}
+
+.description{
+  grid-area: c;
+}
+
+.username{
+  color: white;
+  grid-area: d;
+}
+
+.planet_options{
+  list-style: none;
+  margin-top: 2em;
+  display: inline;
+  text-align: center;
+}
+
+.planet_options_list li{
+  display: inline;
+}
+
+.planet_options_list a{
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 2px 6px 2px 6px;
+  border: 1px solid #191970;
+  box-shadow: 5px 5px #000000;
+}
+
+
+@media screen and (min-width: 1000px){
+  .info{
+    display : grid;
+    grid-template-areas:
+      "b a"
+      "b c"
+      ". d";
+    grid-template-columns: 463px;
+    grid-template-rows: 100px;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+    .info{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .content{
+      width:80%;
+      margin: auto;
+      text-align: center;
+    }
+}

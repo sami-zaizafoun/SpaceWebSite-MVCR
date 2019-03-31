@@ -1,0 +1,49 @@
+.content{
+  margin: auto;
+  width: 80%;
+}
+.gallery{
+  list-style: none;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.gallery a {
+	display: flex;
+	max-width: 20em;
+	text-decoration: none;
+	color: inherit;
+	padding: .5em;
+	margin: .2em;
+
+  vertical-align: middle;
+}
+
+.planet_item{
+
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+.planet_figure{
+  text-align: center;
+  width: 300px;
+}
+
+.planet_img{
+  width: 300px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 1000px){
+  .gallery .planet_img:hover {
+    transition: transform 1s;
+  	transform: scale(1.3);
+  }
+
+  .gallery .planet_img:not(hover) {
+    transition: transform 2s;
+  }
+}

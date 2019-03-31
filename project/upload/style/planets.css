@@ -1,0 +1,81 @@
+.pageHead{
+  display: none;
+  height: 21vw;
+  background-color: black;
+  overflow: hidden;
+}
+
+
+.pageHead ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+	display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1.5vw;
+  align-items: center;
+}
+
+.pageHead li{
+  display: inline-grid;
+  overflow: visible;
+}
+
+.pageHead img{
+  display: block;
+}
+
+.rotatingPlanets{
+    margin: 0;
+}
+
+.planet_captions{
+  visibility:hidden;
+  text-align: center;
+}
+
+.pageHead li:hover .planet_captions{
+  visibility: visible;
+}
+
+#sun{
+  height: 20vw;
+}
+
+#mercury{
+  height: 2vw;
+}
+
+#venus{
+   height: 4vw;
+}
+
+#earth{
+  height: 6vw;
+}
+
+#mars{
+  height: 3vw;
+}
+
+#jupiter{
+  height: 15vw;
+}
+
+#saturn{
+  height: 14vw;
+}
+
+#uranus{
+  height: 7vw;
+}
+
+#neptune{
+  height: 7vw;
+}
+
+@media screen and (min-width: 1000px){
+  .pageHead{
+    display: block;
+  }
+}
